@@ -110,7 +110,6 @@ def change_password(request):
     return Response({"message": "Parol muvaffaqiyatli o'zgartirildi!"}, status=status.HTTP_200_OK)
 
 
-# Shu usulda qolgan POST API'lar uchun ham swagger qo'shamiz
 
 @swagger_auto_schema(method='post', request_body=MarketSerializer)
 @api_view(["POST"])
